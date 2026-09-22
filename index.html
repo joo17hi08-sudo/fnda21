@@ -423,10 +423,10 @@
                     </div>
                 </div>
                 <div class="lg:col-span-6 flex flex-col items-center justify-center space-y-4">
-                    <!-- 9:16 Vertical Shorts Interactive Player -->
-                    <div class="w-full max-w-[280px] aspect-[9/16] bg-gray-900 rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-800 relative flex flex-col justify-between p-4 text-white">
-                        <!-- RPG Status Header -->
-                        <div class="flex justify-between items-center text-[11px] font-bold text-emartYellow bg-black/40 px-3 py-1.5 rounded-full backdrop-blur-md">
+                    <!-- 9:16 Vertical Shorts Video Player -->
+                    <div class="w-full max-w-[280px] aspect-[9/16] bg-gray-900 rounded-3xl overflow-hidden shadow-2xl border-4 border-gray-800 relative flex flex-col justify-between p-2 text-white">
+                        <!-- RPG Status Header Overlay -->
+                        <div class="absolute top-4 left-4 right-4 z-10 flex justify-between items-center text-[11px] font-bold text-emartYellow bg-black/60 px-3 py-1.5 rounded-full backdrop-blur-md">
                             <span>❤️ HP: 100/100</span>
                             <span class="flex items-center space-x-1">
                                 <i class="fa-solid fa-star text-xs"></i>
@@ -434,31 +434,13 @@
                             </span>
                         </div>
 
-                        <!-- Center Animation / Content Box -->
-                        <div class="my-auto space-y-3 text-center">
-                            <div class="w-16 h-16 mx-auto bg-emartYellow text-emartNavy rounded-2xl flex items-center justify-center text-3xl shadow-lg animate-bounce">
-                                <i class="fa-solid fa-compass"></i>
-                            </div>
-                            <div class="bg-emartNavy/80 border border-emartYellow/40 p-3 rounded-2xl backdrop-blur-md space-y-1">
-                                <span class="bg-emartRed text-white text-[9px] px-2 py-0.5 rounded-full font-black">QUEST ACTIVE</span>
-                                <h5 class="font-black text-xs text-emartYellow leading-tight">[주간 퀘스트: '불고기']<br>보물 재료 4개를 찾아라!</h5>
-                            </div>
-                        </div>
-
-                        <!-- Interactive Simulator Controller -->
-                        <div class="space-y-2 bg-black/50 p-3 rounded-2xl backdrop-blur-md text-center">
-                            <p class="text-[10px] text-gray-300">쇼츠 영상 파일(_5조.mp4) 연동 대기중 또는 브라우저 로컬 정책 제어 시 아래 버튼으로 시뮬레이션 하세요.</p>
-                            <div class="flex space-x-2">
-                                <button onclick="alert('POV 숏폼 영상이 재생됩니다: 이마트 매장 진입 ➔ 보물지도 수령 ➔ 한우 정육코너 스탬프 획득 ➔ 미션 완료!')" class="flex-1 py-2 bg-emartYellow text-emartNavy font-black text-xs rounded-xl hover:bg-yellow-400 transition-colors shadow">
-                                    <i class="fa-solid fa-play mr-1"></i> 영상 재생
-                                </button>
-                                <button onclick="alert('쇼츠 URL 또는 로컬 비디오 파일 경로(_5조.mp4)가 올바른 위치에 있는지 확인해주세요.')" class="px-3 py-2 bg-white/10 text-white font-bold text-xs rounded-xl hover:bg-white/20 transition-colors">
-                                    <i class="fa-solid fa-circle-info"></i>
-                                </button>
-                            </div>
-                        </div>
+                        <!-- Actual Video Element for _5조.mp4 -->
+                        <video class="w-full h-full object-cover rounded-2xl" autoplay muted loop playsinline controls>
+                            <source src="_5조.mp4" type="video/mp4">
+                            브라우저가 동영상 재생을 지원하지 않습니다.
+                        </video>
                     </div>
-                    <span class="text-xs font-semibold text-gray-500"><i class="fa-solid fa-circle-play text-emartRed mr-1"></i> 9:16 세로형 쇼츠 시뮬레이터 인터페이스</span>
+                    <span class="text-xs font-semibold text-gray-500"><i class="fa-solid fa-circle-play text-emartRed mr-1"> _5조.mp4</i> 9:16 세로형 쇼츠 영상 플레이어</span>
                 </div>
             </div>
         </section>
